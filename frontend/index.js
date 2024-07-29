@@ -75,7 +75,7 @@ function moduleProject1() {
     sentence += ` is friends with ` 
     for (let i = 0; i < person.friends.length; i++) {
       const friendId = person.friends[i]
-      const friend = people.find(p => p.id === friendId)
+      const friend = people.find(p => p.id === friendId) //eslint-disable-line
       const fullName = `${friend.fname} ${friend.lname}`
       let isLast = i === person.friends.length - 1
       let isNextToLast = i === person.friends.length - 2
